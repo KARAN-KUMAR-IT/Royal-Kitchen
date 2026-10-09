@@ -1,0 +1,150 @@
+{% extends 'base.html'%}
+{% load static %}
+
+{% block childpage %}
+<!-- Heading -->
+ <div class="row heading">
+  <div class="col-sm-6 mx-auto text-light fs-2 py-4 text-center">
+          About <b class="text-color1"> Us</b>
+  </div>
+ </div>
+<!-- end heading-->
+ 
+
+          <!--Intro Section -->
+ <div class="row py-5 bg-color2">
+  <div class="col-sm-10 mx-auto pt-5">
+    <div class="row">
+    <div class="col-sm-5 position-relative">
+      <img class="position-absolute top-0 start-50 translate-middle" 
+      src="{% static 'images/home-one/restant2.png'%}" height="150px"/>
+      <img class="position-absolute top-50 start-0 translate-middle" 
+      src="{% static 'images/home-one/restant3.png'%}" height="150px"/>
+      <img class="position-absolute top-50 start-100 translate-middle"
+       src="{% static 'images/home-one/restant4.png'%}" height="150px"/>
+      <img class="position-absolute top-100 start-50 translate-middle" 
+      src="{% static 'images/home-one/restant5.png'%}" height="150px"/>
+      <img src="{% static 'images/home-one/restant.png'%}" class="img-fluid"/>
+    </div>
+    <div class="col-sm-7" style="text-align: justify;">
+      <p class="fs-4">About <b class="text-color1">Our Restaurant</b></p>
+      <hr class="w-50"/>
+      <p>
+        Welcome to Food Fusion Restaurant, where every meal is crafted to bring people together through unforgettable flavors and exceptional hospitality. We believe that great food is more than just nourishment—it's an experience that creates memories, celebrates culture, and connects people. Our restaurant combines traditional recipes with modern culinary techniques to deliver a unique fusion of taste, freshness, and creativity.
+      </p>
+      
+      <p>
+         vegetables, premium spices, quality meats, and carefully sourced ingredients. Every plate reflects our commitment to quality, presentation, and customer satisfaction.
+      </p>
+    </div>
+    </div>
+  </div>
+ </div>
+<!-- Intro Section end -->
+
+<!--CTA-->
+ <div class="row py-5 bg-color1 ">
+  <div class="col-sm-10 mx-auto">
+    <div class="row py-5">
+      <div class="col-sm-8">
+       <b> Ready for a Memorable Dining Experience</b>
+       <p>Experience delicious flavors, a warm atmosphere, and unforgettable moments. Book your table now and let us make your dining experience truly special.</p>
+      </div>
+      <div class="col-sm-2 pt-3">
+        <a href="tel:+91-6386188893" class="btn1 d-block text-center text-dark" style="background: rgb(#e724df, #f62fc7c2, white) ;"><i class="fa-solid fa-phone"></i>call now</a>
+      </div>
+      <div class="col-sm-2 pt-3">
+        <a href="/user/booking/" class="btn1 d-block text-center text-dark" style="background: rgb(38, 128, 0);"><i class="fa-solid fa-chair"></i>book table</a>
+      </div>
+    </div>
+  </div>
+ </div>
+ <!--CTA end-->
+
+
+
+
+
+
+
+
+
+
+ <!--why choose-->
+ <div class="row bg-color1">
+  <div class="col-sm-10 mx-auto">
+    <div class="row">
+      <div class="col-sm-8">
+        <div class="fs-3">Why Choose <b class="text-light">Food Fusion</b></div>
+        <hr class="w-50"/>
+        
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+
+
+
+
+
+
+
+        <p class="bg-color2 p-2 shadow-lg rounded"><b> 🚀	Lightning-Fast Delivery	Get your favorite meals delivered quickly with optimized delivery routes and dedicated delivery partners.</b></p>
+        <p class="bg-color2 p-2 shadow-lg rounded"><b>🍽️	Wide Restaurant Selection	Explore a diverse range of local favorites, popular chains, cafés, bakeries, and specialty restaurants—all in one place.</b></p>
+        <p class="bg-color2 p-2 shadow-lg rounded"><b>📍	Real-Time Order Tracking	Follow your order from preparation to delivery with live tracking and timely status updates.</b></p>
+        <p class="bg-color2 p-2 shadow-lg rounded"><b>💳	Safe & Secure Payments	Enjoy worry-free transactions with multiple trusted payment options and advanced security measures.</b></p>
+        <p class="bg-color2 p-2 shadow-lg rounded"><b>⭐	Quality You Can Trust	We partner with restaurants that prioritize freshness, hygiene, and consistently great food.</b></p>
+        
+        
+      </div>
+      <div class="col-sm-6">
+        <img src="{% static 'images/home-one/banner/banner-slider3.png'%}" class="img-fluid fa-spin"/>
+      </div>
+    </div>
+  </div>
+ </div>
+ <!--why choose end-->
+
+  <!-- box -->
+<div class=" row py-5 bg-color2">
+  <div class="col-sm-10 mx-auto">
+    <div class="row">
+      <!-- section -->
+      <div class="col-sm-3 border text-center bg-light p-3 shadow-lg">
+        <b class="fs-1">
+          <i class="fa-solid fa-kitchen-set"></i> 
+          <span>5K</span>
+        </b> 	<br/>Happy Customers Served
+      </div>
+      <!-- section end -->
+        <!-- section -->
+      <div class="col-sm-3 border text-center bg-light p-3 shadow-lg">
+        <b class="fs-1">
+          <i class="fa-solid fa-kitchen-set"></i> 
+          <span>100+</span>
+        </b> 	<br/>	Expert Chefs
+      </div>
+      <!-- section end -->
+        <!-- section -->
+      <div class="col-sm-3 border text-center bg-light p-3 shadow-lg">
+        <b class="fs-1">
+          <i class="fa-solid fa-star"></i> 
+          <span>4.9</span>
+        </b> 	<br/>	Customer Rating
+      </div>
+      <!-- section end -->
+        <!-- section -->
+      <div class="col-sm-3 border text-center bg-light p-3 shadow-lg">
+        <b class="fs-1">
+          <i class="fa-solid fa-kitchen-set"></i> 
+          <span>200+</span>
+        </b> 	<br/>Fusion Dishes
+      </div>
+      <!-- section end -->
+       
+    </div>
+  </div>
+</div>
+<!-- box end -->
+
+{% endblock %}

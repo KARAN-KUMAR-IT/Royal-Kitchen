@@ -1,0 +1,93 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block childpage %}
+<!-- Heading -->
+ <div class="row heading">
+  <div class="col-sm-6 mx-auto text-light fs-2 py-4 text-center">
+          Book <b class="text-color1"> Table Now</b>
+  </div>
+ </div>
+<!-- end heading-->
+
+<!--why choose-->
+ <div class="row bg-color1">
+  <div class="col-sm-10 mx-auto">
+    <div class="row">
+      <div class="col-sm-8">
+        <div class="fs-3">why Choose <b class="text-light">Food Fusion</b></div>
+        <hr class="w-50"/>
+        Your Trusted Partner for Fast, Fresh, and Hassle-Free Food Delivery
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <!---booking form-->
+            <b class="badge bg-success">{{msg}}</b><br/>
+
+            <form method="post">
+                    {% csrf_token %}
+                      <input type="text" value="Per Person Price : 25/-" readonly required class="form-control"/>
+                      <input type="number" onblur="demo()" id="t" placeholder="Enter No of People" name="nop" required class="form-control"/>
+                      <input type="number" id="t1" placeholder="Total Amount" readonly name="amount" required class="form-control"/>
+                      <input type="text" placeholder="Name" name="name" required class="form-control"/>
+                      <input type="number" name="mobile" placeholder="Mobile No" required class="form-control"/>
+                      <input type="email" name="email" placeholder="Email" required class="form-control"/>
+                      <input type="date" name="date"  required class="form-control"/>
+                      <input type="time" name="time"  required class="form-control"/>
+                      <textarea placeholder="Message" name="msg" required class="form-control txta"></textarea>
+                      <textarea placeholder="Address" name="address" required class="form-control txta"></textarea>
+                      <input type="submit" value="book now" class="btn btn-dark bg-color1" rounded-1 />
+                    </form>
+
+
+            <!--booking form end-->
+        </div>
+      <div class="col-sm-6">
+
+
+
+
+
+
+
+        <p class="bg-color2 p-2 shadow-lg rounded"><b> 🚀	Lightning-Fast Delivery	Get your favorite meals delivered quickly with optimized delivery routes and dedicated delivery partners.</b></p>
+        <p class="bg-color2 p-2 shadow-lg rounded"><b>🍽️	Wide Restaurant Selection	Explore a diverse range of local favorites, popular chains, cafés, bakeries, and specialty restaurants—all in one place.</b></p>
+        <p class="bg-color2 p-2 shadow-lg rounded"><b>📍	Real-Time Order Tracking	Follow your order from preparation to delivery with live tracking and timely status updates.</b></p>
+        <p class="bg-color2 p-2 shadow-lg rounded"><b>💳	Safe & Secure Payments	Enjoy worry-free transactions with multiple trusted payment options and advanced security measures.</b></p>
+        <p class="bg-color2 p-2 shadow-lg rounded"><b>⭐	Quality You Can Trust	We partner with restaurants that prioritize freshness, hygiene, and consistently great food.</b></p>
+        <p class="bg-color2 p-2 shadow-lg rounded"><b>🎁	Exclusive Offers & Rewards	Save more with exciting discounts, special promotions, and loyalty rewards available throughout the year.</b></p>
+        <p class="bg-color2 p-2 shadow-lg rounded"><b>📱	Simple & User-Friendly App	Browse menus, customize orders, and reorder your favorites in just a few taps with our intuitive platform.</b></p>
+        
+      </div>
+      
+    </div>
+  </div>
+ </div>
+ <!--why choose end-->
+
+
+
+<!-- booking -->
+<div class="row">
+    <div class="col-sm-10 mx-auto">
+        <div class="row py-5">
+            <div class="col-sm-8"></div>
+            <div class="col-sm-4">
+
+                
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Booking end -->
+ <script>
+    function demo()
+    {
+        var nop=document.getElementById("t").value
+        amount=parseInt(nop)*25
+        document.getElementById("t1").value=amount
+    }
+ </script>
+
+{% endblock %}
